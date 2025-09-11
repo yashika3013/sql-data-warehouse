@@ -1,7 +1,7 @@
-# Data Warehouse and Analytics Project
+# Data Warehouse STAR Schema Project
 
-**Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. 
+**Data Warehouse STAR Schema Project** repository! 🚀  
+End-to-end implementation of a star schema data warehouse for efficient storage and querying.
 
 ---
 ## 🏗️ Data Architecture
@@ -16,9 +16,55 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 ---
 ## 📖 Project Overview
 
-This project involves:
+This project focuses on building a **scalable data warehouse** by applying industry best practices in data engineering and database design.  
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+### Key Aspects:  
+- **Source Integration**: Combining datasets from ERP and CRM systems into a unified warehouse.  
+- **Data Transformation**: Cleaning, deduplicating, and applying business rules.  
+- **Schema Design**: Implementing a **star schema** with fact and dimension tables.  
+- **Data Flow & Governance**: Maintaining data lineage and relationships across layers.
+
+---
+
+## ✨ Features  
+
+- Multi-layered **Medallion Architecture** (Bronze, Silver, Gold).  
+- **ETL Pipelines** for structured data movement.  
+- **Star Schema** data modeling for optimized queries.  
+- Clear **documentation & diagrams** for architecture, data flow, and schema.  
+- **Test scripts** for validating transformations and data quality.  
+
+---
+
+## 🛠 Tech Stack  
+
+- **Database**: SQL Server  
+- **ETL / Transformation**: SQL Scripts  
+- **Source Data**: CSV files (ERP & CRM datasets)  
+- **Version Control**: Git & GitHub  
+- **Documentation**: Draw.io for diagrams, Markdown for docs
+
+---
+
+## 📂 Repository Structure
+```
+data-warehouse-project/
+│
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/                               # Project documentation and architecture details
+│   ├── data_architecture.png           # Draw.io file shows the project's architecture
+│   ├── data_flow.png                   # Draw.io file for the data flow diagram
+│   ├── data_model.png                  # Draw.io file for data models (star schema)
+│   ├── data_integration.png            # Draw.io file for how tables are related 
+│
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
+│
+├── tests/                              # Test scripts and quality files
+│
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
+```
